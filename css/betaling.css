@@ -1,0 +1,26 @@
+p {
+    font-size: 1em;
+}
+
+#datautstyr {
+    position: absolute;
+    left: 30%;
+    top: 7%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em; 
+}
+
+#datamaskiner {
+    position: absolute;
+    left: 1%;
+    top: 7%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+}
+
+.sum {
+    position: absolute;
+    bottom: 10%;
+    left: 1%;
+}
+

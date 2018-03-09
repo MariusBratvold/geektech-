@@ -1,0 +1,38 @@
+.flex-container {
+    display: flex;
+    background-color: lightgreen;
+    
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+  }
+
+
+  .flex-container p {
+    font-size: 0.7em;
+    position: relative;
+    top: -4%;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: lightgreen;
+    padding: 10px;
+  }
+  .grid-item {
+    background-color: lightgray;
+    padding: 10px;
+    font-size: 0.7em;
+    
+  }
+
+  .grid-container p {
+    position: relative;
+    top: -4%;
+    font-size: 2em;
+  }

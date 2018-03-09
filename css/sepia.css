@@ -1,0 +1,71 @@
+#bilder {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.bilde {
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
+    background-repeat: no-repeat;
+    filter: sepia(80%);
+    flex: 1;
+    transition: 2s;
+}
+
+.bilde:hover {
+    filter: sepia(0%);
+    flex: 5;
+    min-height: 600px;
+    background-size: contain;
+}
+
+div.bilde:nth-child(1) {
+    background-image: url("../bilder/datamaskiner/huawei1.jpg");
+}
+
+div.bilde:nth-child(2) {
+    background-image: url("../bilder/datamaskiner/microsoft2.jpg");
+}
+
+div.bilde:nth-child(3) {
+    background-image: url("../bilder/datamaskiner/hp3.jpg");
+}
+
+div.bilde:nth-child(4) {
+    background-image: url("../bilder/datamaskiner/microsoft4.jpg");
+}
+
+div.bilde:nth-child(5) {
+    background-image: url("../bilder/datamaskiner/mac5.jpg");
+}
+
+div.bilde:nth-child(6) {
+    background-image: url("../bilder/datamaskiner/lenovo6.jpg");
+}
+
+div.bilde:nth-child(7) {
+    background-image: url("../bilder/datamaskiner/omen7.jpg");
+}
+
+div.bilde:nth-child(8) {
+    background-image: url("../bilder/datamaskiner/hp8.jpg");
+}
+
+div.bilde:nth-child(9) {
+    background-image: url("../bilder/datamaskiner/acer9.jpg");
+}
+
+div.bilde:nth-child(10) {
+    background-image: url("../bilder/datamaskiner/mac10.jpg");
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+pre {
+    font-family: Arial, Helvetica, sans-serif;
+}
