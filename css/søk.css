@@ -1,9 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-body{
-  background: #f2f2f2;
-  font-family: 'Open Sans', sans-serif;
-}
+
 
 .search {
   width: 40%;
@@ -17,21 +14,24 @@ body{
   width: 100%;
   border: 3px solid lightgreen;
   padding: 5px;
-  height: 20px;
+  height: 30px;
   border-radius: 5px;
   outline: none;
   color: #9DBFAF;
+  font-size: 0.5em;
 }
 
 .searchTerm:focus{
   color: black;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.5em;
 }
 
 .searchButton {
-  position: absolute;  
-  width: 40px;
-  height: 36px;
+  position: absolute; 
+  right: 28%; 
+  width: 45px;
+  height: 45px;
   border: 1px solid lightgreen;
   background: lightgreen;
   text-align: center;
@@ -39,14 +39,17 @@ body{
   border-radius: 5px;
   cursor: pointer;
   font-size: 20px;
+  background-image: url(../bilder/search.png);
+  
 }
 
 /*Resize the wrap to see the search bar change!*/
 .wrap {
   margin: auto;
   width: 50%;
+  height: 20%;
   position: absolute;
-  top: 37%;
-  right: 20%;
+  top: 50%;
+  right: -25%;
   transform: translate(-50%, -50%);
 }
