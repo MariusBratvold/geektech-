@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html>
- 
+
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="../css/style.css">
-<link rel="stylesheet" href="../css/betaling.css">
-<link rel="icon" href="../bilder/icon.png">
-<title> GeekTech Inc. </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/betaling.css">
+    <link rel="icon" href="../bilder/icon.png">
+    <title> GeekTech Inc. </title>
 </head>
 
 <body>
     <div id="meny">
         <ul>
-            <li> <a class="active" href="../index.html">Hjem</a></li>
-                    <li> <a href="datamaskiner.html"> Datamaskiner </a></li>
-                    <li> <a href="datautstyr.html"> Datautstyr </a></li>
-                    <li> <a href="omoss.html"> Handlekurv </a></li>
-                    <li> <a href="betaling.html"> Til betaling </a></li>
-            </ul>
+            <li>
+                <a class="active" href="../index.html">Hjem</a>
+            </li>
+            <li>
+                <a href="datamaskiner.html"> Datamaskiner </a>
+            </li>
+            <li>
+                <a href="datautstyr.html"> Datautstyr </a>
+            </li>
+            <li>
+                <a href="omoss.html"> Handlekurv </a>
+            </li>
+            <li>
+                <a href="betaling.html"> Til betaling </a>
+            </li>
+        </ul>
     </div>
     <div class="tittel">
-    <h1> Betaling </h1>
-    <img src="bilder/icon.png">
+        <h1> Betaling </h1>
+        <img src="bilder/icon.png">
     </div>
     <div id="innhold">
         <p> Marker produktene du vil kjøpe, takk for handelen! </p>
@@ -29,73 +39,96 @@
         <script type="text/javascript">
 
             var total = 0;
-        
-            function test(item){
-                if(item.checked){
-                   total+= parseInt(item.value);
-                }else{
-                   total-= parseInt(item.value);
+
+            function test(item) {
+                if (item.checked) {
+                    total += parseInt(item.value);
+                } else {
+                    total -= parseInt(item.value);
                 }
                 //alert(total);
                 document.getElementById('Totalcost').innerHTML = total + " ,-";
             }
-        
-        
-        
-            </script>
-            </head>
-            <body>
-        
+
+
+
+        </script>
+        </head>
+
+        <body>
+
             <div id="datamaskiner">
-            <h2> Datamaskiner </h2>
-            <input type="checkbox" name="channelcost" value="13495" onClick="test(this);" />Huawei Matebook X, 13 495,-<br />
-            <input type="checkbox" name="channelcost" value="21990" onClick="test(this);" />Microsoft Surface Book 2, 21 990,- <br />
-            <input type="checkbox" name="channelcost" value="19990" onClick="test(this);" />HP Spectre x360, 19 990,- <br />
-            <input type="checkbox" name="channelcost" value="9490" onClick="test(this);" />Microsoft Surface Laptop, 9 490,- <br />
-            <input type="checkbox" name="channelcost" value="15989" onClick="test(this);" />Apple Macbook Pro 13, 15 989,- <br />
-            <input type="checkbox" name="channelcost" value="7490" onClick="test(this);" />Lenovo Legion Y520T, 7 490,- <br />
-            <input type="checkbox" name="channelcost" value="13990" onClick="test(this);" />OMEN av HP 880-121, 13 990,- <br />
-            <input type="checkbox" name="channelcost" value="9490" onClick="test(this);" />HP Pavilion Power 580-189, 9 490,- <br />
-            <input type="checkbox" name="channelcost" value="4990" onClick="test(this);" />Acer Revo Cube RN-76, 4 990,- <br />
-            <input type="checkbox" name="channelcost" value="20489" onClick="test(this);" />Apple iMac 27, 20 489,- <br />
+                <h2> Datamaskiner </h2>
+                <input data-name="Huawei Matebook X" type="checkbox" name="channelcost" value="13495" onClick="test(this);" />Huawei Matebook X, 13 495,-
+                <br />
+                <input data-name="Microsoft Surface Book 2" type="checkbox" name="channelcost" value="21990" onClick="test(this);" />Microsoft Surface Book 2, 21 990,-
+                <br />
+                <input data-name="HP Spectre x360" type="checkbox" name="channelcost" value="19990" onClick="test(this);" />HP Spectre x360, 19 990,-
+                <br />
+                <input data-name="Microsoft Surface Laptop" type="checkbox" name="channelcost" value="9490" onClick="test(this);" />Microsoft Surface Laptop, 9 490,-
+                <br />
+                <input data-name="Apple Macbook Pro 13" type="checkbox" name="channelcost" value="15989" onClick="test(this);" />Apple Macbook Pro 13, 15 989,-
+                <br />
+                <input data-name="Lenovo Legion Y520T" type="checkbox" name="channelcost" value="7490" onClick="test(this);" />Lenovo Legion Y520T, 7 490,-
+                <br />
+                <input data-name="OMEN av HP 880-121" type="checkbox" name="channelcost" value="13990" onClick="test(this);" />OMEN av HP 880-121, 13 990,-
+                <br />
+                <input data-name="HP Pavilion Power 580-189" type="checkbox" name="channelcost" value="9490" onClick="test(this);" />HP Pavilion Power 580-189, 9 490,-
+                <br />
+                <input data-name="Acer Revo Cube RN-76" type="checkbox" name="channelcost" value="4990" onClick="test(this);" />Acer Revo Cube RN-76, 4 990,-
+                <br />
+                <input data-name="Apple iMac 27" type="checkbox" name="channelcost" value="20489" onClick="test(this);" />Apple iMac 27, 20 489,-
+                <br />
             </div>
-         
-        
-        
+
+
+
             <div id="datautstyr">
-            <h2> Skjermer </h2>
-                <input type="checkbox" name="channelcost" value="1995" onClick="test(this);" /> 	Samsung 24 LED S24E450F, 1 995,-<br />
-                <input type="checkbox" name="channelcost" value="1990" onClick="test(this);" /> 	ASUS 24 LED FreeSync VG245Q, 1 990,-  <br />
-                <input type="checkbox" name="channelcost" value="4995" onClick="test(this);" /> 	HP OMEN 32 LED FreeSync W9S97AA, 4 995,- <br />
-            <h2> Tastatur </h2>
-                <input type="checkbox" name="channelcost" value="2263" onClick="test(this);" /> 	Cherry MX Board 6.0, 2 263,-<br />
-                <input type="checkbox" name="channelcost" value="995" onClick="test(this);" /> 	    Razer BlackWidow Chroma, 995,-  <br />
-                <input type="checkbox" name="channelcost" value="1688" onClick="test(this);" /> 	LogiTech G910 Orion Spark, 1 688,- <br />
-            <h2> Datamuser </h2>
-                <input type="checkbox" name="channelcost" value="1328" onClick="test(this);" /> 	Razer Mamba 2015, 1 328,-<br />
-                <input type="checkbox" name="channelcost" value="2500" onClick="test(this);" /> 	Mad Catz R.A.T. Pro X Avago, 2 500,-<br />
-                <input type="checkbox" name="channelcost" value="649" onClick="test(this);" />  	BenQ ZOWIE ZA13, 649,-<br />
-                </div>
-        
-        
-        
-        
-    <p class="sum">Din sum: <span id="Totalcost"> </span></p>
+                <h2> Skjermer </h2>
+                <input type="checkbox" name="channelcost" value="1995" onClick="test(this);" /> Samsung 24 LED S24E450F, 1 995,-
+                <br />
+                <input type="checkbox" name="channelcost" value="1990" onClick="test(this);" /> ASUS 24 LED FreeSync VG245Q, 1 990,-
+                <br />
+                <input type="checkbox" name="channelcost" value="4995" onClick="test(this);" /> HP OMEN 32 LED FreeSync W9S97AA, 4 995,-
+                <br />
+                <h2> Tastatur </h2>
+                <input type="checkbox" name="channelcost" value="2263" onClick="test(this);" /> Cherry MX Board 6.0, 2 263,-
+                <br />
+                <input type="checkbox" name="channelcost" value="995" onClick="test(this);" /> Razer BlackWidow Chroma, 995,-
+                <br />
+                <input type="checkbox" name="channelcost" value="1688" onClick="test(this);" /> LogiTech G910 Orion Spark, 1 688,-
+                <br />
+                <h2> Datamuser </h2>
+                <input type="checkbox" name="channelcost" value="1328" onClick="test(this);" /> Razer Mamba 2015, 1 328,-
+                <br />
+                <input type="checkbox" name="channelcost" value="2500" onClick="test(this);" /> Mad Catz R.A.T. Pro X Avago, 2 500,-
+                <br />
+                <input type="checkbox" name="channelcost" value="649" onClick="test(this);" /> BenQ ZOWIE ZA13, 649,-
+                <br />
+            </div>
+
+
+
+
+            <p class="sum">Din sum:
+                <span id="Totalcost"> </span>
+            </p>
+            <button id="kjop" type="button" >Kjøp</button>
 
  
 
 
 
 
-    <div id="tekst">
+    <div id="tekst ">
         <h3>
             
         </h3>
     </div>
 
-
-
     
+
+    <script src="../js/kjop.js"></script>
 
 </body>
 
