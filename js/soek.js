@@ -25,4 +25,3 @@ function finnOrd(e) {
             });
         }
     }
-}
