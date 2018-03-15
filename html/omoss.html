@@ -29,15 +29,8 @@
 
     <div class="tittel">
     <h1> Handlekurv </h1>
-    
-    <div class="wrap">
-        <div class="search">
-        <input type="text" class="searchTerm" placeholder="Søk..">
-        <button type="submit" class="searchButton" > 
-        <i class="fa fa-search"></i>
-        </button>
-        </div>
-    </div>
+
+
     </div>
     <div id="innhold">
 
@@ -52,7 +45,46 @@
     </div>
 
 
+    <div class="login">
 
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Logg inn</button>
+    
+    <div id="id01" class="modal">
+      
+      <form class="modal-content animate" action="/action_page.php"></div>
+    
+        <div class="container">
+          <label for="uname"><b>Brukernavn</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+    
+          <label for="psw"><b>Passord</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+            
+          <button type="submit">Logg inn</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Husk meg
+          </label>
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Avbryt</button>
+          <span class="psw">Glemt <a href="#">passord?</a></span>
+        </div>
+      </form>
+    </div>
+    
+    <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+    </div>
     
 
 </body>
