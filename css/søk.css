@@ -1,6 +1,6 @@
-.søk {
+#svg {
+    z-index: 3;
     position: absolute;
-    left: 80%;
-    top: 5%;
-    z-index: 1;
+    top: 56.5%;
+    left: 41%;
 }
