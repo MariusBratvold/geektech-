@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/betaling.css">
     <script src="../js/handlekurv.js"></script>
+    <script src="../js/kalk.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
     <link rel="icon" href="../bilder/icon.png">
     <title> GeekTech Inc. </title>
@@ -24,11 +25,12 @@
                 <a href="datautstyr.html"> Datautstyr </a>
             </li>
             <li>
-                <a href="omoss.html"> Handlekurv </a>
-            </li>
+                    <a href="betaling.html"> Til betaling </a>
+                </li>
             <li>
-                <a href="betaling.html"> Til betaling </a>
+                <a href="omoss.html"> Om oss </a>
             </li>
+
         </ul>
     </div>
     <div class="tittel">
@@ -39,20 +41,6 @@
         <p> Marker produktene du vil kjøpe, fyll inn navnet ditt, og så må du ha en god dag videre! </p>
 
         <script type="text/javascript">
-
-            var total = 0;
-
-            function test(item) {
-                if (item.checked) {
-                    total += parseInt(item.value);
-                } else {
-                    total -= parseInt(item.value);
-                }
-                //alert(total);
-                document.getElementById('Totalcost').innerHTML = total + " ,-";
-            }
-
-
 
         </script>
         </head>
@@ -154,6 +142,7 @@
 
     <script>
     handlekurv();
+    test (item);
     </script>
     <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
     <script src="../js/kjop.js"></script>
