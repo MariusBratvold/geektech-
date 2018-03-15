@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/betaling.css">
+    <script src="../js/handlekurv.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
     <link rel="icon" href="../bilder/icon.png">
     <title> GeekTech Inc. </title>
 </head>
@@ -34,7 +36,7 @@
         <img src="bilder/icon.png">
     </div>
     <div id="innhold">
-        <p> Marker produktene du vil kjøpe, takk for handelen! </p>
+        <p> Marker produktene du vil kjøpe, fyll inn navnet ditt, og så må du ha en god dag videre! </p>
 
         <script type="text/javascript">
 
@@ -85,25 +87,25 @@
 
             <div id="datautstyr">
                 <h2> Skjermer </h2>
-                <input type="checkbox" name="channelcost" value="1995" onClick="test(this);" /> Samsung 24 LED S24E450F, 1 995,-
+                <input data-name="Samsung 24 LED S24E450F" type="checkbox" name="channelcost" value="1995" onClick="test(this);" /> Samsung 24 LED S24E450F, 1 995,-
                 <br />
-                <input type="checkbox" name="channelcost" value="1990" onClick="test(this);" /> ASUS 24 LED FreeSync VG245Q, 1 990,-
+                <input data-name="ASUS 24 LED FreeSync VG245Q" type="checkbox" name="channelcost" value="1990" onClick="test(this);" /> ASUS 24 LED FreeSync VG245Q, 1 990,-
                 <br />
-                <input type="checkbox" name="channelcost" value="4995" onClick="test(this);" /> HP OMEN 32 LED FreeSync W9S97AA, 4 995,-
+                <input data-name="HP OMEN 32 LED FreeSync W9S97AA" type="checkbox" name="channelcost" value="4995" onClick="test(this);" /> HP OMEN 32 LED FreeSync W9S97AA, 4 995,-
                 <br />
                 <h2> Tastatur </h2>
-                <input type="checkbox" name="channelcost" value="2263" onClick="test(this);" /> Cherry MX Board 6.0, 2 263,-
+                <input data-name="Cherry MX Board 6.0" type="checkbox" name="channelcost" value="2263" onClick="test(this);" /> Cherry MX Board 6.0, 2 263,-
                 <br />
-                <input type="checkbox" name="channelcost" value="995" onClick="test(this);" /> Razer BlackWidow Chroma, 995,-
+                <input data-name="Razer BlackWidow Chroma" type="checkbox" name="channelcost" value="995" onClick="test(this);" /> Razer BlackWidow Chroma, 995,-
                 <br />
-                <input type="checkbox" name="channelcost" value="1688" onClick="test(this);" /> LogiTech G910 Orion Spark, 1 688,-
+                <input data-name="LogiTech G910 Orion Spark" type="checkbox" name="channelcost" value="1688" onClick="test(this);" /> LogiTech G910 Orion Spark, 1 688,-
                 <br />
                 <h2> Datamuser </h2>
-                <input type="checkbox" name="channelcost" value="1328" onClick="test(this);" /> Razer Mamba 2015, 1 328,-
+                <input data-name="Razer Mamba 2015" type="checkbox" name="channelcost" value="1328" onClick="test(this);" /> Razer Mamba 2015, 1 328,-
                 <br />
-                <input type="checkbox" name="channelcost" value="2500" onClick="test(this);" /> Mad Catz R.A.T. Pro X Avago, 2 500,-
+                <input data-name="Mad Catz R.A.T. Pro X Avago" type="checkbox" name="channelcost" value="2500" onClick="test(this);" /> Mad Catz R.A.T. Pro X Avago, 2 500,-
                 <br />
-                <input type="checkbox" name="channelcost" value="649" onClick="test(this);" /> BenQ ZOWIE ZA13, 649,-
+                <input data-name="BenQ ZOWIE ZA13" type="checkbox" name="channelcost" value="649" onClick="test(this);" /> BenQ ZOWIE ZA13, 649,-
                 <br />
             </div>
 
@@ -116,9 +118,33 @@
             <button id="kjop" type="button" >Kjøp</button>
 
  
+            <div id="main">
+                    <div>
+                        <form>
+                            <div>
+                                <div> Navn: </div>
+                                <div>
+                                    <input id="land" type="text">
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                </div>
+                                <div></div>
+                            </div>
+                        </form>
+                    </div>
+                    
+                                <div></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
 
-
-
+                <div class="søk">
+                        <p> Søk blant produktene våre: </p>
+                        <input type="text" placeholder="søk" id="find">
+                      </div>
 
     <div id="tekst ">
         <h3>
@@ -126,7 +152,9 @@
         </h3>
     </div>
 
-    
+    <script>
+    handlekurv();
+    </script>
     <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
     <script src="../js/kjop.js"></script>
 

@@ -8,6 +8,7 @@ var config = {
   messagingSenderId: "964699682673"
 };
 firebase.initializeApp(config);
+let database = firebase.database();
 
 
 
@@ -19,6 +20,8 @@ btnKjop.addEventListener("click", kjop);
 function kjop(e) {
     let varer = Array.from(document.querySelectorAll("input:checked "));
     let bestilling = varer.map(e => [e.value, e.dataset.name]);
-    console.log(bestilling);
+    let navn = document.getElementById("land").value;
+    let ref = database.ref("bestilling/" + navn);
+    ref.set( bestilling );
 }
 
