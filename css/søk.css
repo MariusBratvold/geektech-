@@ -1,6 +1,10 @@
 #svg {
     z-index: 3;
     position: absolute;
-    top: 56.5%;
-    left: 41%;
+    top: 87%;
+    left: 93%;
+}
+
+pre {
+    line-height: 1.5em;
 }
