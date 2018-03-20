@@ -127,45 +127,48 @@ li a:hover:not(.active) {
 .active {
     color: #FFFFFF;
     background-color: lightgreen;
-
 }
-    .bin {
-        background-color: #006EFF;
-        position: absolute;
-        width: 31%;
-        height: 100%;
-        left: 0;
-        padding: 2px;
-    }
-    .hex {
-        background-color: #006EFF;
-        position: absolute;
-        width: 31%;
-        height: 100%;
-        left: 34.6%;
-        top: 0;
-    }
-    .tegnsett {
-        background-color: #006EFF;
-        position: absolute;
-        width: 31%;
-        height: 100%;
-        right: 0;
-        top: 0;
-    }
-    h2 {
-        position: relative;
-        top: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        color: black;
-    }
-    p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 3em;
-    }
+
+.bin {
+    background-color: #006EFF;
+    position: absolute;
+    width: 31%;
+    height: 100%;
+    left: 0;
+    padding: 2px;
+}
+
+.hex {
+    background-color: #006EFF;
+    position: absolute;
+    width: 31%;
+    height: 100%;
+    left: 34.6%;
+    top: 0;
+}
+
+.tegnsett {
+    background-color: #006EFF;
+    position: absolute;
+    width: 31%;
+    height: 100%;
+    right: 0;
+    top: 0;
+}
+
+h2 {
+    position: relative;
+    top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+}
 
 #logo {
     position: absolute;
     left: 50%;
 }
-

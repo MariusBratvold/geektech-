@@ -7,8 +7,8 @@ function handlekurv() {
         projectId: "geektech-49a5a",
         storageBucket: "geektech-49a5a.appspot.com",
         messagingSenderId: "964699682673"
-      };
-      firebase.initializeApp(config);
+    };
+    firebase.initializeApp(config);
 
     let inpLand = document.getElementById("land");
 
@@ -20,4 +20,4 @@ function handlekurv() {
         ref.set({ navn });
     }
 }
-    
+

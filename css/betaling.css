@@ -7,7 +7,7 @@ p {
     left: 30%;
     top: 7%;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5em; 
+    line-height: 1.5em;
 }
 
 #datamaskiner {
@@ -26,8 +26,8 @@ p {
 
 #kjop {
     position: absolute;
-    left: 70%; 
-    top: 15%;  
+    left: 70%;
+    top: 15%;
 }
 
 #main {
@@ -52,7 +52,6 @@ article {
     position: absolute;
     left: 73%;
     top: 42%;
-
 }
 
 #liste {
@@ -63,5 +62,5 @@ article {
 }
 
 .kunde {
-  background-color: gray;
+    background-color: gray;
 }

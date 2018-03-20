@@ -27,12 +27,14 @@
                 <a href="datautstyr.html"> Datautstyr </a>
             </li>
             <li>
-                    <a href="betaling.html"> Til betaling </a>
-                </li>
+                <a href="betaling.html"> Til betaling </a>
+            </li>
             <li>
                 <a href="omoss.html"> Om oss </a>
             </li>
-            <li> <a href="prosjektinfo.html"> Om prosjektet </a></li>
+            <li>
+                <a href="prosjektinfo.html"> Om prosjektet </a>
+            </li>
 
         </ul>
     </div>
@@ -82,7 +84,8 @@
                 <br />
                 <input data-name="ASUS 24 LED FreeSync VG245Q" type="checkbox" name="channelcost" value="1990" onClick="test(this);" /> ASUS 24 LED FreeSync VG245Q, 1 990,-
                 <br />
-                <input data-name="HP OMEN 32 LED FreeSync W9S97AA" type="checkbox" name="channelcost" value="4995" onClick="test(this);" /> HP OMEN 32 LED FreeSync W9S97AA, 4 995,-
+                <input data-name="HP OMEN 32 LED FreeSync W9S97AA" type="checkbox" name="channelcost" value="4995" onClick="test(this);"
+                /> HP OMEN 32 LED FreeSync W9S97AA, 4 995,-
                 <br />
                 <h2> Tastatur </h2>
                 <input data-name="Cherry MX Board 6.0" type="checkbox" name="channelcost" value="2263" onClick="test(this);" /> Cherry MX Board 6.0, 2 263,-
@@ -106,67 +109,67 @@
             <p class="sum">Din sum:
                 <span id="Totalcost"> </span>
             </p>
-            <button id="kjop" type="button" >Kjøp</button>
+            <button id="kjop" type="button">Kjøp</button>
 
- 
+
             <div id="main">
-                    <div>
-                        <form>
+                <div>
+                    <form>
+                        <div>
+                            <div> Navn: </div>
                             <div>
-                                <div> Navn: </div>
-                                <div>
-                                    <input id="land" type="text">
-                                </div>
+                                <input id="land" type="text">
                             </div>
+                        </div>
+                        <div>
                             <div>
-                                <div>
-                                </div>
-                                <div></div>
                             </div>
-                        </form>
-                    </div>
-                    
-                                <div></div>
-                            </div>
-                        </form>
-                    </div>
+                            <div></div>
+                        </div>
+                    </form>
                 </div>
 
-              <div class="søk">  
-                <p> Søk blant produktene: </p>  
-                <input type="text" placeholder="søk" id="find">
+                <div></div>
             </div>
+            </form>
+    </div>
+    </div>
 
-                <div id="resultat"></div>
+    <div class="søk">
+        <p> Søk blant produktene: </p>
+        <input type="text" placeholder="søk" id="find">
+    </div>
 
-                    <article>
-                    <div id="liste" class="kunde">
-                       <div>
-                           <span id="kundevelger"></span>
-                       </div>
-                    </div>
-                    <div id="dyr" class="dyr">
-            
-                    </div>
-            
-                </article>
+    <div id="resultat"></div>
+
+    <article>
+        <div id="liste" class="kunde">
+            <div>
+                <span id="kundevelger"></span>
             </div>
+        </div>
+        <div id="dyr" class="dyr">
+
+        </div>
+
+    </article>
+    </div>
 
 
     <div id="tekst ">
         <h3>
-            
+
         </h3>
     </div>
 
     <script>
-    handlekurv();
-    test (item);
-    search();
+        handlekurv();
+        test(item);
+        search();
     </script>
     <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
     <script src="../js/kjop.js"></script>
 
-</body>
+    </body>
 
 </html>
