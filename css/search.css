@@ -1,0 +1,14 @@
+#search input {
+    position: absolute;
+    z-index: 99;
+    left: 75.5%;
+    top: 35%;
+    
+}
+
+#resultat {
+    position: absolute;
+    z-index: 99;
+    left: 70%;
+    top: 30%;
+}

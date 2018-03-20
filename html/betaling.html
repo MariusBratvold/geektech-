@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/betaling.css">
+    <link rel="stylesheet" href="../css/search.css">
     <script src="../js/handlekurv.js"></script>
     <script src="../js/kalk.js"></script>
+    <script src="../js/search.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
     <link rel="icon" href="../bilder/icon.png">
     <title> GeekTech Inc. </title>
@@ -30,6 +32,7 @@
             <li>
                 <a href="omoss.html"> Om oss </a>
             </li>
+            <li> <a href="prosjektinfo.html"> Om prosjektet </a></li>
 
         </ul>
     </div>
@@ -129,10 +132,26 @@
                     </div>
                 </div>
 
-                <div class="søk">
-                        <p> Søk blant produktene våre: </p>
-                        <input type="text" placeholder="søk" id="find">
-                      </div>
+              <div class="søk">  
+                <p> Søk blant produktene: </p>  
+                <input type="text" placeholder="søk" id="find">
+            </div>
+
+                <div id="resultat"></div>
+
+                    <article>
+                    <div id="liste" class="kunde">
+                       <div>
+                           <span id="kundevelger"></span>
+                       </div>
+                    </div>
+                    <div id="dyr" class="dyr">
+            
+                    </div>
+            
+                </article>
+            </div>
+
 
     <div id="tekst ">
         <h3>
@@ -143,6 +162,7 @@
     <script>
     handlekurv();
     test (item);
+    search();
     </script>
     <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
     <script src="../js/kjop.js"></script>

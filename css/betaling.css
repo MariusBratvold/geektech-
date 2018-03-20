@@ -42,5 +42,26 @@ p {
     position: absolute;
     left: 75.5%;
     top: 35%;
-    z-index: 2;
+    z-index: 5;
+}
+
+article {
+    font-size: 1.1em;
+    padding: 2em;
+    z-index: 4;
+    position: absolute;
+    left: 73%;
+    top: 42%;
+
+}
+
+#liste {
+    width: 15vw;
+    min-height: 35vh;
+    border: 3px solid lightgreen;
+    padding: 1em;
+}
+
+.kunde {
+  background-color: gray;
 }

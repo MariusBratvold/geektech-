@@ -13,10 +13,6 @@ function handlekurv() {
     let inpLand = document.getElementById("land");
 
 
-    let btnLagreLand = document.getElementById("lagreland");
-    btnLagreLand.addEventListener("click", lagreLand);
-
-
     function lagreLand(e) {
         let land = inpLand.value;
         let navn = inpRegion.value;
